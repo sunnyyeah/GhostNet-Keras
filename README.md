@@ -15,6 +15,7 @@
 # 训练方式
 1. 修改train.py中的TrainPATH和ValPATH
 2. 运行train.py
+3. 使用tensorboard查看运行过程：tensorboard --logdir=./tmp/log/xxx
 
 # 数据集的存放
 datasets/train、datasets/val、datasets/test
