@@ -20,19 +20,10 @@ my_datasets = ['airplane', 'airport', 'basketball_court', 'beach', 'bridge', 'co
                'intersection', 'mountain', 'overpass', 'parking_lot', 'railway', 'railway_station',
                'residential', 'river', 'runway', 'ship', 'stadium', 'storage_tank', 'tennis_court']
 
-# rootdir下面是类别文件,类别文件下面才是相关的图片,,针对25个类别进行预测
+# rootdir下面是类别文件,类别文件下面才是相关的图片
 def readImage2(rootdir):
-    # 图片的根目录
-    # rootdir = "/home/wby/DeepLearning/SceneClassification/datasets/NWPU-RESISC45/stadium/"
-    # rootdir = "./testImage/"
     ClassList = os.listdir(rootdir)
     # print(imageName)
-
-    # 加载训练好的模型
-    # model = load_model('MobileNetV3_NWPU-RESISC45_pretrainModel.hdf5',
-    #                    custom_objects={"_hard_swish": _hard_swish, "_relu6": _relu6})
-    # model = GhostNet((256, 256, 3), 25).build()
-    # model.load_Weights(LoadWeights)
 
     # model = load_model(LoadModel, custom_objects={"slices": slices})
     model = GhostNet((224, 224, 3), 25).build()
