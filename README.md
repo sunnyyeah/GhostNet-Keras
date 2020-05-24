@@ -18,4 +18,4 @@
 3. 使用tensorboard查看运行过程：tensorboard --logdir=./tmp/log/xxx
 
 # 数据集的存放
-datasets/train、datasets/val、datasets/test
+images/train、images/val、images/test
